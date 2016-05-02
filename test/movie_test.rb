@@ -21,4 +21,5 @@ describe Movie do
   it "should be pg-13" do
     @@sb['Rated'].should == 'PG-13'
   end
+
 end
