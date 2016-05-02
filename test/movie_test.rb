@@ -10,12 +10,15 @@ describe Movie do
   end
 
   it "should be Solarbabies" do
-    @sb = Movie.new.to_hash
-    @sb['Title'].should == 'Solarbabies'
+    @@sb = Movie.new.to_hash
+    @@sb['Title'].should == 'Solarbabies'
   end
 
-  it "should be Solarbabies" do
-    @sb = Movie.new.to_hash
-    @sb['Year'].should == '1986'
+  it "should be 1986" do
+    @@sb['Year'].should == '1986'
+  end
+
+  it "should be pg-13" do
+    @@sb['Rated'].should == 'PG-13'
   end
 end
