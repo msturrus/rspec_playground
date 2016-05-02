@@ -3,7 +3,7 @@ class Movie
   def initialize
 
     puts Rainbow('Movie was instantiated').cyan
-    @props = HTTPArty.get('http://www.omdbapi.com/?t=solarbabies&y=&plot=short&r=json')
+    @props = HTTParty.get('http://www.omdbapi.com/?t=solarbabies&y=&plot=short&r=json')
     puts Rainbow(@props).green
   end
 
